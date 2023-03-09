@@ -1,0 +1,20 @@
+{
+    "name": "game/test",
+    "autoload": {
+        "psr-4": {
+            "Model\\": "Model",
+            "Core\\": "Core"
+        }
+    },
+    "authors": [
+        {
+            "name": "GETSOFT",
+            "email": "oversale1@gmail.com"
+        }
+    ],
+    "require": {
+      "ext-pdo": "*",
+      "ext-memcached": "*",
+        "ext-memcache": "*"
+    }
+}

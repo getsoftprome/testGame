@@ -1,0 +1,128 @@
+body{
+    background: rgb(54,38,23);
+    background: linear-gradient(180deg, rgba(54,38,23,1) 14%, rgba(107,65,28,1) 74%);
+    font-family: sans-serif;
+}
+form{
+    margin: 0;
+}
+.popup-err{
+    text-align: center;
+    font-size: 20px;
+    color: #ff1b1b;
+}
+.popup{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logs{
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    font-size: 13px;
+    color: #c20808;
+    height: 45px;
+    overflow: hidden;
+}
+.popup-input{
+    margin: auto;
+    width: max-content;
+    padding: 20px;
+    background: #ffd082;
+    border-radius: 10px;
+}
+input[type="text"],input[type="password"]{
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px 0px;
+    text-align: center;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px;
+    max-width: 100%;
+    font-size: 20px;
+    background: #4a4a4a;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    min-width: 200px;
+}
+button:hover{
+    background: #292929;
+}
+
+.player{
+    width: 100px;
+    height: 100px;
+    background: #337aff;
+    margin: auto;
+    position: relative;
+}
+.player.enemy{
+    background: #f12d2d;
+}
+.war-zone{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #ffa656;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.player-nickname{
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 0px 2px 2px #00000057;
+}
+.player-hp-bar{
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    height: 15px;
+    font-size: 13px;
+
+}
+.player-activity{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+}
+.war-zone button{
+    font-size: 12px;
+    min-width: 100%;
+}
+.player-damage{
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: max-content;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.start-timer{
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: max-content;
+    height: max-content;
+    font-size: 40px;
+    color: #df0000;
+    font-weight: bold;
+}
