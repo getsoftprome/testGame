@@ -36,7 +36,7 @@ class User extends Model{
             );
             $stmt->execute([
                 ':nickname' => $nickname,
-                ':hash' => $hash,
+                ':hash' =>  $hash['hash'],
                 ':password' => $password,
                 ':rating' => 100,
                 ':damage' => 10,

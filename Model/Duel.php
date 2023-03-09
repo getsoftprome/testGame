@@ -99,7 +99,7 @@ class Duel extends Model
     {
         $log[$players['player']['user_id']] = 'Вы убили '.$players['enemy']['nickname'];
         $log[$players['enemy']['user_id']] = 'Вас убил '.$players['player']['nickname'];
-        
+
         DuelLog::add($players['enemy']['duel'],$log);
 
         $stmt = self::getPdoInstance()->prepare(
