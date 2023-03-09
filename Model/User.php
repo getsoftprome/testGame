@@ -32,7 +32,7 @@ class User extends Model{
             $hash['hash'] = self::getHash($nickname.$password.time());
             $hash['message'] = 'Success';
             $stmt = self::getPdoInstance()->prepare(
-                "INSERT INTO `users`(`nickname`,`password`,`rating`,`hash`,`damage`,`health_points`) VALUES(:nickname, :password, :rating, :hash, :damage, :health_points)"
+                "INSERT INTO `users`(`nickname`,`password`,`rating`,`hash`,`damage`,`health_points`,`status`) VALUES(:nickname, :password, :rating, :hash, :damage, :health_points,'')"
             );
             $stmt->execute([
                 ':nickname' => $nickname,
@@ -41,7 +41,10 @@ class User extends Model{
                 ':rating' => 100,
                 ':damage' => 10,
                 ':health_points' => 100
+
             ]);
+
+
         }else{
             if($user['password'] === $password){
                 $hash['hash'] = self::getHash($nickname.$password.time());
